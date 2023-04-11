@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_Page_Subjective">
+
+
+    <TextView
+        android:id="@+id/Text_Subjective_Subjective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:text="Subjective"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="192dp"
+        android:text="1/5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Subjective_Subjective" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/subjectiveQuestionImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="5 : 00"
+        app:layout_constraintStart_toStartOf="@+id/Text_Subjective_Time"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Subjective_Time" />
+
+    <EditText
+        android:id="@+id/Input_Subjective_Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/Text_Subjective_Answer"
+        app:layout_constraintTop_toBottomOf="@+id/subjectiveQuestionImage" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_Answer"
+        android:layout_width="75dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:text="Answer:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/subjectiveQuestionImage"
+        app:layout_constraintTop_toTopOf="@+id/Input_Subjective_Answer" />
+
+    <Button
+        android:id="@+id/Button_Subjective_Answer"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/subjectiveQuestionImage"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Subjective_QuestionNumber"
+        app:srcCompat="@drawable/subtest1" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Score"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/subjectiveQuestionImage"
+        app:layout_constraintTop_toTopOf="@+id/Text_Subjective_Time" />
+
+    <TextView
+        android:id="@+id/Text_Subjective_CurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/Text_Subjective_Score"
+        app:layout_constraintStart_toStartOf="@+id/Text_Subjective_Score"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Subjective_Score" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

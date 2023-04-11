@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Game_Page_Polar">
+
+
+    <TextView
+        android:id="@+id/Text_Polar_Polar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:text="Polar"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Polar_QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="192dp"
+        android:text="1/5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Polar_Polar" />
+
+    <TextView
+        android:id="@+id/Text_Polar_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/polarQuestionImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_Polar_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="5 : 00"
+        app:layout_constraintEnd_toEndOf="@+id/Text_Polar_Time"
+        app:layout_constraintStart_toStartOf="@+id/Text_Polar_Time"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Polar_Time" />
+
+    <Button
+        android:id="@+id/Button_Polar_Answer"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/polarQuestionImage"
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Polar_QuestionNumber"
+        app:srcCompat="@drawable/polartest1" />
+
+    <RadioGroup
+        android:id="@+id/radioYesNo"
+        android:layout_width="123dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/polarQuestionImage"
+        app:layout_constraintStart_toStartOf="@+id/polarQuestionImage"
+        app:layout_constraintTop_toBottomOf="@+id/polarQuestionImage">
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Text_Polar_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Score"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/polarQuestionImage"
+        app:layout_constraintTop_toTopOf="@+id/Text_Polar_Time" />
+
+    <TextView
+        android:id="@+id/Text_Polar_CurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/Text_Polar_Score"
+        app:layout_constraintStart_toStartOf="@+id/Text_Polar_Score"
+        app:layout_constraintTop_toBottomOf="@+id/Text_Polar_Score" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

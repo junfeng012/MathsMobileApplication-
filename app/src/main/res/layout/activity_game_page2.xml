@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#C6B6B6"
+    tools:context=".Game_Page2">
+
+    <TextView
+        android:id="@+id/Text_GP2_Background"
+        android:layout_width="326dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:foreground="@color/teal_700"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Image_GP2_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/Text_GP2_Background"
+        app:layout_constraintTop_toTopOf="@+id/Text_GP2_Background"
+        android:src="@drawable/mathlogo" />
+
+    <TextView
+        android:id="@+id/Text_GP2_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Total Score"
+        app:layout_constraintStart_toEndOf="@+id/Image_GP2_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/Text_GP2_Name" />
+
+    <Button
+        android:id="@+id/Button_GP2_Trigonometry"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="80dp"
+        android:text="Trigonometry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_GP2_Background" />
+
+    <Button
+        android:id="@+id/Button_GP2_Calculus"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:text="Calculus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_GP2_Trigonometry" />
+
+    <Button
+        android:id="@+id/Button_GP2_Factorization"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:text="Factorization"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_GP2_Calculus" />
+
+    <Button
+        android:id="@+id/Button_GP2_Back"
+        android:layout_width="97dp"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:foregroundTint="@color/white"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#CDC8C8" />
+
+    <TextView
+        android:id="@+id/Text_GP2_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Username"
+        app:layout_constraintStart_toEndOf="@+id/Image_GP2_Profile"
+        app:layout_constraintTop_toTopOf="@+id/Text_GP2_Background" />
+</androidx.constraintlayout.widget.ConstraintLayout>

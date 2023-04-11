@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_Page_MCQ">
+
+    <TextView
+        android:id="@+id/Text_MCQ_MCQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:text="MCQ"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_MCQ_QuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="192dp"
+        android:text="1/5"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_MCQ_MCQ" />
+
+    <TextView
+        android:id="@+id/Text_MCQ_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/mcqQuestionImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_MCQ_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="5 : 00"
+        app:layout_constraintStart_toStartOf="@+id/Text_MCQ_Time"
+        app:layout_constraintTop_toBottomOf="@+id/Text_MCQ_Time" />
+
+    <Button
+        android:id="@+id/Button_MCQ_A"
+        android:layout_width="122dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="A "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/mcqQuestionImage"
+        app:layout_constraintTop_toBottomOf="@+id/mcqQuestionImage" />
+
+    <Button
+        android:id="@+id/Button_MCQ_B"
+        android:layout_width="122dp"
+        android:layout_height="57dp"
+        android:text="B "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mcqQuestionImage"
+        app:layout_constraintTop_toTopOf="@+id/Button_MCQ_A" />
+
+    <Button
+        android:id="@+id/Button_MCQ_C"
+        android:layout_width="122dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="C "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Button_MCQ_A"
+        app:layout_constraintTop_toBottomOf="@+id/Button_MCQ_A" />
+
+    <Button
+        android:id="@+id/Button_MCQ_D"
+        android:layout_width="122dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="D "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Button_MCQ_B"
+        app:layout_constraintTop_toBottomOf="@+id/Button_MCQ_B" />
+
+    <Button
+        android:id="@+id/Button_MCQ_Answer"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/mcqQuestionImage"
+        android:layout_width="390dp"
+        android:layout_height="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_MCQ_QuestionNumber"
+        app:srcCompat="@drawable/trimcqtest1" />
+
+    <TextView
+        android:id="@+id/Text_MCQ_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Score"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mcqQuestionImage"
+        app:layout_constraintTop_toTopOf="@+id/Text_MCQ_Time" />
+
+    <TextView
+        android:id="@+id/Text_MCQ_CurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/Text_MCQ_Score"
+        app:layout_constraintStart_toStartOf="@+id/Text_MCQ_Score"
+        app:layout_constraintTop_toBottomOf="@+id/Text_MCQ_Score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Friends_Page">
+
+    <TextView
+        android:id="@+id/Text_FP_Background"
+        android:layout_width="326dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:foreground="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_FP_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Total Score"
+        app:layout_constraintStart_toEndOf="@+id/Image_FP_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/Text_FP_Name" />
+
+    <TextView
+        android:id="@+id/Text_FP_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="User Name"
+        app:layout_constraintStart_toEndOf="@+id/Image_FP_Profile"
+        app:layout_constraintTop_toTopOf="@+id/Text_FP_Background" />
+
+    <ImageView
+        android:id="@+id/Image_FP_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/mathlogo"
+        app:layout_constraintStart_toStartOf="@+id/Text_FP_Background"
+        app:layout_constraintTop_toTopOf="@+id/Text_FP_Background" />
+
+    <TextView
+        android:id="@+id/Text_FP_Friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Friend"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Text_FP_Background"
+        app:layout_constraintTop_toBottomOf="@+id/Text_FP_Background" />
+
+    <TextView
+        android:id="@+id/Text_FP_EnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Enter Name:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button_FP_Add"
+        app:layout_constraintStart_toStartOf="@+id/Text_FP_Friend" />
+
+    <EditText
+        android:id="@+id/Input_FP_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/Button_FP_Add"
+        app:layout_constraintStart_toEndOf="@+id/Text_FP_EnterName" />
+
+    <Button
+        android:id="@+id/Button_FP_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listviewtext"
+        android:layout_width="323dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/Text_FP_Friend"
+        app:layout_constraintTop_toBottomOf="@+id/Text_FP_Friend" />
+
+    <Button
+        android:id="@+id/bttnbackFP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toEndOf="@+id/Button_FP_Add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

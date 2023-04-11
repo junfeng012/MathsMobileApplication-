@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_Page3">
+
+    <Button
+        android:id="@+id/Button_GP3_Back"
+        android:layout_width="97dp"
+        android:layout_height="63dp"
+        android:background="@color/white"
+        android:foregroundTint="@color/white"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#CDC8C8" />
+
+    <TextView
+        android:id="@+id/Text_GP3_Background"
+        android:layout_width="326dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="28dp"
+        android:foreground="@color/teal_700"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text_GP3_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Total Score"
+        app:layout_constraintStart_toEndOf="@+id/Image_GP3_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/Text_GP3_Name" />
+
+    <TextView
+        android:id="@+id/Text_GP3_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Username"
+        app:layout_constraintStart_toEndOf="@+id/Image_GP3_Profile"
+        app:layout_constraintTop_toTopOf="@+id/Text_GP3_Background" />
+
+    <ImageView
+        android:id="@+id/Image_GP3_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/Text_GP3_Background"
+        app:layout_constraintTop_toTopOf="@+id/Text_GP3_Background"
+        android:src="@drawable/mathlogo" />
+
+    <TextView
+        android:id="@+id/Text_GP3_GameMode"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="94dp"
+        android:text="Trigonometry"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_GP3_Background" />
+
+    <Button
+        android:id="@+id/Button_GP3_Polar"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Polar : 3569"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text_GP3_GameMode" />
+
+    <Button
+        android:id="@+id/Button_GP3_MCQ"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="MCQ : 345"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_GP3_Polar" />
+
+    <Button
+        android:id="@+id/Button_GP3_Subjective"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="Subjective : 7665"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button_GP3_MCQ" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
